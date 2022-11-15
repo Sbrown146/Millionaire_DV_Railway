@@ -2,7 +2,7 @@ import os
 import pandas as pd
 import numpy as np
 
-# from .configCred import postgres_route
+from .configCred import postgres_route
 # from configCred import postgres_route
 
 import sqlalchemy
@@ -22,7 +22,6 @@ app = Flask(__name__)
 
 ENV = "production"
 
-postgres_route = "postgresql://postgres:4LLlaaXIqhDlREior9hh@containers-us-west-114.railway.app:6284/railway"
 
 if ENV == "dev":
     app.debug = True
