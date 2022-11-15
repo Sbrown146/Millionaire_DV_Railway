@@ -2,8 +2,10 @@ import os
 import pandas as pd
 import numpy as np
 
-from .configCred import postgres_route
+# from .configCred import postgres_route
 # from configCred import postgres_route
+
+from config import ConfigCred
 
 
 import sqlalchemy
