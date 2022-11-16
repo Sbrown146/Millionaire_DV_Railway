@@ -4,7 +4,8 @@ import numpy as np
 
 # from .configCred import postgres_route
 # from configCred import postgres_route
-from .config.configCred import postgres_route
+# from .config.configCred import postgres_route
+from ..config import configCred
 
 
 import sqlalchemy
@@ -27,10 +28,10 @@ ENV = "production"
 
 if ENV == "dev":
     app.debug = True
-    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route
+    app.config["SQLALCHEMY_DATABASE_URI"] = configCred.postgres_route()
 else:
     app.debug = False
-    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route
+    app.config["SQLALCHEMY_DATABASE_URI"] = configCred.postgres_route()
     
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
