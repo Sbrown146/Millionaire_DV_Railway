@@ -5,9 +5,9 @@ import numpy as np
 import sys
 sys.path.append(r"D:\Old_C_Drive_Current_Repos\Millionaire_Railway\config")
 
-from .configCred import postgres_route
+# from .configCred import postgres_route
 # from configCred import postgres_route
-# from .config.configCred import postgres_route
+from .config.configCred import postgres_route
 # from ..config import configCred
 
 
