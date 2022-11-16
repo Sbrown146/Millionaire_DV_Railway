@@ -2,9 +2,9 @@ import os
 import pandas as pd
 import numpy as np
 
-from .configCred import postgres_route
+# from .configCred import postgres_route
 # from configCred import postgres_route
-
+from config.configCred import postgres
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
