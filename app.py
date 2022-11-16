@@ -31,10 +31,10 @@ ENV = "production"
 
 if ENV == "dev":
     app.debug = True
-    app.config["SQLALCHEMY_DATABASE_URI"] = configCred.postgres_route()
+    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route()
 else:
     app.debug = False
-    app.config["SQLALCHEMY_DATABASE_URI"] = configCred.postgres_route()
+    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route()
     
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
