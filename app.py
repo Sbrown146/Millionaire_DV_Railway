@@ -5,9 +5,13 @@ import numpy as np
 # import sys
 # sys.path.append(r"D:\Old_C_Drive_Current_Repos\Millionaire_Railway\config")
 
+# config.py route for Heroku
 # from .config import postgres_route
+
+# config.py route for local running
 # from config import postgres_route
 
+# route for Railway.  Create an environment variable on the app railway page and paste the database_url there to call it (no quotations needed)
 postgres_route = os.environ.get("postgres_route")
 
 import sqlalchemy
