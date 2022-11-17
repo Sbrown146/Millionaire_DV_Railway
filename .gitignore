@@ -1,4 +1,4 @@
 .vscode
 __pycache__
-configCred.py
+config.py
 .ipynb_checkpoints
