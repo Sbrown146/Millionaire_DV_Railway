@@ -5,7 +5,7 @@ import numpy as np
 # import sys
 # sys.path.append(r"D:\Old_C_Drive_Current_Repos\Millionaire_Railway\config")
 
-# from .config import postgres_route
+from .config import postgres_route
 # from config import postgres_route
 
 
@@ -29,10 +29,10 @@ ENV = "production"
 
 if ENV == "dev":
     app.debug = True
-    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route()
+    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route
 else:
     app.debug = False
-    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route()
+    app.config["SQLALCHEMY_DATABASE_URI"] = postgres_route
     
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
