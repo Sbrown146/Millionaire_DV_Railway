@@ -5,9 +5,10 @@ import numpy as np
 # import sys
 # sys.path.append(r"D:\Old_C_Drive_Current_Repos\Millionaire_Railway\config")
 
-from .config import postgres_route
+# from .config import postgres_route
 # from config import postgres_route
 
+postgres_route = os.environ.get("postgres_route")
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
